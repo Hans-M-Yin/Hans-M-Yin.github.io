@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://hans-m-yin.github.io/sitemap.xml
