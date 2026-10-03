@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 360" role="img" aria-labelledby="title desc">
+  <title id="title">Interleaved multimodal search</title>
+  <desc id="desc">A winding search path alternates between text documents and images to connect evidence.</desc>
+  <rect width="540" height="360" fill="#fff"/>
+  <g font-family="Arial,sans-serif">
+    <text x="25" y="44" fill="#315b91" font-size="24" font-weight="bold">Multimodal search</text>
+    <text x="25" y="69" fill="#67788d" font-size="14">Connecting evidence across modalities</text>
+  </g>
+  <g fill="none" stroke="#7a8fa9" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M99 146C116 146 118 221 137 221m-7-5 7 5-7 5"/>
+    <path d="M203 221C220 221 222 146 241 146m-7-5 7 5-7 5"/>
+    <path d="M307 146C324 146 326 221 345 221m-7-5 7 5-7 5"/>
+    <path d="M411 221C428 221 430 146 449 146m-7-5 7 5-7 5"/>
+  </g>
+  <g fill="#edf3fb" stroke="#bfd1eb">
+    <rect x="33" y="106" width="66" height="80" rx="9"/>
+    <rect x="241" y="106" width="66" height="80" rx="9"/>
+    <rect x="449" y="106" width="66" height="80" rx="9"/>
+  </g>
+  <g fill="#fdf2ee" stroke="#ebc1b5">
+    <rect x="137" y="181" width="66" height="80" rx="9"/>
+    <rect x="345" y="181" width="66" height="80" rx="9"/>
+  </g>
+  <g fill="none" stroke="#416da3" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M51 124h21l9 9v35H51zm21 0v9h9M58 143h16m-16 9h16m-16 9h10"/>
+    <path d="M259 124h21l9 9v35h-30zm21 0v9h9M266 143h16m-16 9h16m-16 9h10"/>
+    <path d="M467 124h21l9 9v35h-30zm21 0v9h9M474 143h16m-16 9h16m-16 9h10"/>
+  </g>
+  <g fill="none" stroke="#bd806f" stroke-width="2.5" stroke-linejoin="round">
+    <rect x="149" y="203" width="42" height="34" rx="3"/>
+    <path d="m150 233 12-14 9 9 7-7 12 12"/>
+    <rect x="357" y="203" width="42" height="34" rx="3"/>
+    <path d="m358 233 12-14 9 9 7-7 12 12"/>
+  </g>
+  <g fill="#bd806f"><circle cx="180" cy="212" r="3"/><circle cx="388" cy="212" r="3"/></g>
+  <g font-family="Arial,sans-serif" font-size="13" text-anchor="middle" fill="#43546a">
+    <text x="66" y="209">Text</text><text x="170" y="284">Image</text><text x="274" y="209">Text</text><text x="378" y="284">Image</text><text x="482" y="209">Text</text>
+    <text x="270" y="319" font-weight="bold" fill="#315b91">An interleaved path through evidence</text>
+    <text x="270" y="342" font-size="11" fill="#778395">Research schematic</text>
+  </g>
+</svg>

@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 360" role="img" aria-labelledby="title desc">
+  <title id="title">MIRA</title>
+  <desc id="desc">Deceptive contextual augmentation and visual reflection guide reinforcement learning toward more robust reasoning.</desc>
+  <rect width="540" height="360" fill="#fff"/>
+  <g font-family="Arial,sans-serif">
+    <text x="25" y="44" fill="#315b91" font-size="24" font-weight="bold">MIRA</text>
+    <text x="25" y="69" fill="#67788d" font-size="14">Learning to reflect on visual evidence</text>
+  </g>
+  <rect x="25" y="100" width="140" height="152" rx="8" fill="#fdf2ee" stroke="#ebc1b5"/>
+  <rect x="200" y="100" width="140" height="152" rx="8" fill="#edf3fb" stroke="#bfd1eb"/>
+  <rect x="375" y="100" width="140" height="152" rx="8" fill="#edf3fb" stroke="#bfd1eb"/>
+  <g stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <rect x="57" y="127" width="76" height="96" rx="5" fill="#fff" stroke="#d9b4a8" stroke-width="2"/>
+    <path d="M72 147h46m-46 15h32m-32 40h36" stroke="#d0b7ae" stroke-width="3"/>
+    <path d="M72 181h46" stroke="#b95343" stroke-width="3"/>
+    <circle cx="121" cy="181" r="9" fill="#fdf2ee" stroke="#b95343" stroke-width="2"/>
+    <path d="M118 178l6 6m0-6-6 6" stroke="#b95343" stroke-width="2"/>
+    <rect x="237" y="148" width="66" height="53" rx="4" fill="#fff" stroke="#416da3" stroke-width="2.5"/>
+    <path d="m238 195 19-22 15 14 10-11 19 20" stroke="#416da3" stroke-width="2.5"/>
+    <circle cx="286" cy="161" r="4" fill="#9ab4d5" stroke="none"/>
+    <path d="M229 174a43 43 0 0 1 72-32m-12-1 12 1-1-12M311 174a43 43 0 0 1-72 32m12 1-12-1 1 12" stroke="#7a8fa9" stroke-width="2.5"/>
+    <rect x="407" y="127" width="76" height="96" rx="5" fill="#fff" stroke="#99bfae" stroke-width="2"/>
+    <path d="M422 147h46m-46 15h32m-32 40h36" stroke="#aacbbb" stroke-width="3"/>
+    <path d="m435 180 9 9 17-20" stroke="#5c967b" stroke-width="4"/>
+    <path d="M172 175h19m-7-6 7 6-7 6M347 175h19m-7-6 7 6-7 6" stroke="#7a8fa9" stroke-width="3"/>
+  </g>
+  <g font-family="Arial,sans-serif" font-size="13" text-anchor="middle" fill="#43546a">
+    <text x="95" y="281">Deceptive context</text><text x="270" y="281">Visual reflection</text><text x="445" y="281">Robust reasoning</text>
+    <text x="270" y="319" font-weight="bold" fill="#315b91">Reflection-guided reinforcement learning</text>
+    <text x="270" y="342" font-size="11" fill="#778395">Research schematic</text>
+  </g>
+</svg>
