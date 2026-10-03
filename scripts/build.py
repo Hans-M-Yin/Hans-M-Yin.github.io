@@ -49,8 +49,7 @@ def home():
     <p>Hi, I am <strong>Zhihan Yin</strong>.</p>
     <p>I am an undergraduate student in Intelligence Science and Technology at <a href="https://english.pku.edu.cn/">Peking University</a> and a research intern in <a href="https://www.bytedance.com/en/">Monetization GenAI at ByteDance</a>. I also conduct research at the Wangxuan Institute of Computer Technology, Peking University.</p>
     <p>My research focuses on <strong>multimodal agents, visual perception, and reasoning</strong>. I am especially interested in how models acquire evidence across modalities, recognize perceptual errors, and reason reliably with what they see.</p>
-    <p>My current project, <a href="/publications/#searchweave">SearchWeave</a>, explores autonomous cross-modal deep search: letting an agent decide what to search, which modality to use, and when to switch as its information needs evolve.</p>
-    <p>Previously, I worked on fine-grained hallucination evaluation (<a href="/publications/#freak">FREAK, ICLR 2026</a>), training-free visual perception (<a href="/publications/#veto">Veto, ACM MM 2026</a>), and reinforcement learning for robust multimodal reasoning (<a href="/publications/#mira">MIRA</a>).</p>
+    <p>My work includes fine-grained hallucination evaluation (<a href="/publications/#freak">FREAK, ICLR 2026</a>), training-free visual perception (<a href="/publications/#veto">Veto, ACM MM 2026</a>), and reinforcement learning for robust multimodal reasoning (<a href="/publications/#mira">MIRA, NeurIPS 2026 Poster</a>).</p>
     <h2>Research Interests</h2><ul class="interests">{interests}</ul>
     </div><aside class="profile" aria-label="Profile and contact">
     {portrait}<p class="affiliation">Peking University</p><p class="department">Intelligence Science and Technology</p>
