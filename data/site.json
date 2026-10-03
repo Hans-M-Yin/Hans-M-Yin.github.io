@@ -1,0 +1,81 @@
+{
+  "name": "Zhihan Yin",
+  "username": "Hans-M-Yin",
+  "email": "2300013171@stu.pku.edu.cn",
+  "url": "https://hans-m-yin.github.io",
+  "tagline": "Undergraduate @ Peking University | Research Intern @ ByteDance",
+  "affiliation": "Peking University",
+  "department": "Intelligence Science and Technology",
+  "portrait": null,
+  "interests": ["Multimodal agents and autonomous cross-modal search", "Vision-language model reasoning and RL post-training", "Fine-grained visual perception and hallucination", "Reliable and aligned multimodal intelligence"],
+  "news": [
+    {"date": "Jul 10, 2026", "text": "Veto was accepted to ACM Multimedia 2026."},
+    {"date": "Apr 2026", "text": "I joined Monetization GenAI at ByteDance as a research intern."},
+    {"date": "Jan 26, 2026", "text": "FREAK was accepted to ICLR 2026."}
+  ],
+  "papers": [
+    {
+      "id": "searchweave", "short": "SearchWeave",
+      "title": "SearchWeave: Unlocking Autonomous Cross-Modal Deep Search in Multimodal Agents",
+      "status": "Work in progress", "category": "ongoing", "year": 2026,
+      "authors": [],
+      "image": "searchweave.png",
+      "alt": "SearchWeave task comparison: visual evidence at the input, at the target, or interleaved across reasoning hops.",
+      "summary": "Teaching multimodal agents to decide what to search, which modality to use, and when to switch. SearchWeave combines interleaved multimodal graph construction, multi-hop question synthesis, and SFT/RL training in a live web environment.",
+      "details": "This ongoing project studies autonomous selection of text search, text-to-image search, and reverse-image search. Its data pipeline samples paths with diverse depths and modality compositions, then rewrites questions to hide intermediate clues. SearchWeave-Bench is designed to test cross-modal evidence acquisition and integration.",
+      "links": [], "bib": null
+    },
+    {
+      "id": "freak", "short": "FREAK",
+      "title": "FREAK: A Fine-grained Hallucination Evaluation Benchmark for Advanced MLLMs",
+      "status": "ICLR 2026", "category": "published", "year": 2026,
+      "authors": ["Zhihan Yin", "Jianxin Liang", "Yueqian Wang", "Yifeng Yao", "Huishuai Zhang", "Dongyan Zhao"],
+      "image": "freak.svg",
+      "alt": "FREAK research schematic showing fine-grained counter-commonsense edits and hallucination evaluation.",
+      "summary": "A benchmark built from photorealistic images with fine-grained counter-commonsense edits, probing whether advanced multimodal models perceive visual details or fall back on familiar priors.",
+      "details": "FREAK evaluates fine-grained visual hallucination using edited photorealistic images and a controlled subset for detailed perception analysis. It also investigates the behavior of Chain-of-Thought prompting in this setting.",
+      "links": [{"label": "PDF", "url": "https://arxiv.org/pdf/2603.19765"}, {"label": "Code", "url": "https://github.com/Hans-M-Yin/FREAK"}, {"label": "OpenReview", "url": "https://openreview.net/forum?id=YeagC09j2K"}, {"label": "Dataset", "url": "https://huggingface.co/datasets/hansQAQ/FREAK"}],
+      "bib": "@inproceedings{yin2026freak,\n  title = {{FREAK}: A Fine-grained Hallucination Evaluation Benchmark for Advanced {MLLM}s},\n  author = {Zhihan Yin and Jianxin Liang and Yueqian Wang and Yifeng Yao and Huishuai Zhang and Dongyan Zhao},\n  booktitle = {The Fourteenth International Conference on Learning Representations},\n  year = {2026},\n  url = {https://openreview.net/forum?id=YeagC09j2K}\n}"
+    },
+    {
+      "id": "veto", "short": "Veto",
+      "title": "Veto: A Training-free Framework for Fine-grained Visual Perception via Iterative Negative Filtering",
+      "status": "ACM Multimedia 2026", "category": "published", "year": 2026,
+      "authors": ["Ruyi Li", "Zhihan Yin", "Tan Yue", "Jianxin Liang", "Xian-Feng Han", "Huishuai Zhang", "Dongyan Zhao"],
+      "image": "veto.svg",
+      "alt": "Veto research schematic showing iterative removal of distracting regions and verification of visual grounding.",
+      "summary": "A training-free perception framework that progressively removes distracting image regions, helping vision-language models locate and verify fine-grained visual evidence.",
+      "details": "Veto uses reasoning-driven negative filtering to narrow the visual field, followed by verifiable visual grounding. The framework operates at inference time and targets detail-sensitive perception in complex, high-resolution scenes.",
+      "links": [{"label": "Conference", "url": "https://2026.acmmm.org/site/technical-programme.html"}],
+      "bib": null
+    },
+    {
+      "id": "mira", "short": "MIRA",
+      "title": "MIRA: Reinforcing Multimodal Reasoning via Deceptive Contextual Augmentation",
+      "status": "NeurIPS 2026 submission", "category": "manuscript", "year": 2026,
+      "authors": ["Zhihan Yin", "Jianxin Liang", "Yifeng Yao", "Nonghai Zhang", "Bingyue Peng", "Chunguang Qie", "Huishuai Zhang", "Dongyan Zhao"],
+      "image": "mira.png",
+      "alt": "MIRA pipeline: constructing deceptive visual contexts and reinforcement learning with group-wise reflection triggers.",
+      "summary": "Reinforcement learning with deceptive visual contexts and group-wise reflection triggers, encouraging multimodal models to revisit perceptual mistakes and recover during reasoning.",
+      "details": "MIRA first generates and filters misleading visual descriptions, then injects them into training contexts. Reflection triggers within rollout groups encourage visual self-correction while mixing in original data to preserve generalization.",
+      "links": [], "bib": null
+    }
+  ],
+  "education": {"school": "Peking University", "degree": "B.S. Candidate, Intelligence Science and Technology", "dates": "Aug 2023 - Present", "gpa": "3.69 / 4.00"},
+  "experience": [
+    {"role": "Research Intern", "organization": "Monetization GenAI, ByteDance", "dates": "Apr 2026 - Present", "description": "Research on multimodal agents."},
+    {"role": "Research Intern", "organization": "Wangxuan Institute of Computer Technology, Peking University", "dates": "Mar 2025 - Present", "description": "Research on multimodal large language models, visual perception, hallucination evaluation, and reasoning."},
+    {"role": "Teaching Assistant", "organization": "Introduction to Artificial Intelligence, Peking University", "dates": "Mar 2026 - Present", "description": "Course instruction support, assignment design and grading, and student mentoring."}
+  ],
+  "awards": [
+    {"name": "Merit Student", "detail": "Top 10% at Peking University", "years": "2025, 2026"},
+    {"name": "Huirong Li Scholarship", "detail": "Top 15% at Peking University", "years": "2025"},
+    {"name": "National Encouragement Scholarship", "detail": "Top 30% at Peking University", "years": "2024, 2025"}
+  ],
+  "skills": [
+    {"label": "Programming", "value": "Python, C++"},
+    {"label": "Deep learning", "value": "PyTorch, vLLM, veRL"},
+    {"label": "Research tools", "value": "LaTeX, Adobe Illustrator"},
+    {"label": "English", "value": "CET-4: 580; CET-6: 570"}
+  ]
+}
