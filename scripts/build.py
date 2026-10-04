@@ -37,6 +37,12 @@ def papers():
     return '<div class="papers">'+''.join(paper(p) for p in D['papers'])+'</div>'
 def section_title(title, url, action):
     return f'<div class="section-title"><h2>{title}</h2><a href="{url}">{action} &rarr;</a></div>'
+def service_content(heading=3):
+    teaching = ''.join(f'<div class="cv-item"><div class="cv-date">{esc(x["term"])}</div><div><h3>{esc(x["course"])}</h3><p class="cv-detail">Teaching Assistant · {esc(x["institution"])}</p></div></div>' for x in D['service']['teaching'])
+    reviewing = ', '.join(esc(x) for x in D['service']['reviewing'])
+    return f'<div class="service-content"><h{heading}>Teaching</h{heading}>{teaching}<h{heading}>Conference Reviewing</h{heading}><p>Reviewer: {reviewing}.</p></div>'
+def service():
+    return '<h1>Service</h1><p class="page-lead">Teaching and service to the research community.</p>'+service_content(heading=2)
 def home():
     if D['portrait']:
         portrait = f'<img class="portrait" src="{esc(D["portrait"])}" alt="Zhihan Yin" width="272" height="272">'
@@ -59,7 +65,8 @@ def home():
     {section_title('Selected Research', '/publications/', 'All publications & manuscripts')}{papers()}
     {section_title('Experience', '/cv/', 'Full CV')}
     <div class="cv-item"><div class="cv-date">Apr 2026 - Present</div><div><h3>Research Intern · ByteDance</h3><p class="cv-detail">Monetization GenAI · Multimodal agents</p></div></div>
-    <div class="cv-item"><div class="cv-date">Mar 2025 - Present</div><div><h3>Research Intern · Peking University</h3><p class="cv-detail">Wangxuan Institute of Computer Technology · Multimodal learning</p></div></div>'''
+    <div class="cv-item"><div class="cv-date">Mar 2025 - Present</div><div><h3>Research Intern · Peking University</h3><p class="cv-detail">Wangxuan Institute of Computer Technology · Multimodal learning</p></div></div>
+    <section id="service" aria-label="Service">{section_title('Service', '/service/', 'Teaching & reviewing')}{service_content()}</section>'''
 def publications():
     return f'''<h1>Publications &amp; Manuscripts</h1><p class="page-lead">Research on multimodal agents, reliable visual perception, and reasoning.</p>
     <div class="filters" aria-label="Filter research entries"><button class="filter" data-filter="all" aria-pressed="true">All research</button><button class="filter" data-filter="published" aria-pressed="false">Published</button><button class="filter" data-filter="manuscript" aria-pressed="false">Manuscripts</button><button class="filter" data-filter="ongoing" aria-pressed="false">In progress</button></div>
@@ -91,9 +98,10 @@ def cv():
     for s in D['skills']:
         content += f'<dt>{s["label"]}</dt><dd>{s["value"]}</dd>'
     return content+'</dl></section>'
-NAV = [('About', '/'), ('Publications', '/publications/'), ('Projects', '/projects/'), ('CV', '/cv/')]
+NAV = [('About', '/'), ('Publications', '/publications/'), ('Projects', '/projects/'), ('Service', '/service/'), ('CV', '/cv/')]
 INDEX = [{'title':n, 'url':u, 'text':n+' '+D['name'], 'type':'Page'} for n,u in NAV]
 INDEX += [{'title':p['title'], 'url':'/publications/#'+p['id'], 'text':p['summary']+' '+p['details'], 'type':p['status']} for p in D['papers']]
+INDEX += [{'title':'Teaching & Conference Reviewing', 'url':'/service/', 'text':'Teaching Assistant TA '+ ' '.join(x['term']+' '+x['course']+' '+x['institution'] for x in D['service']['teaching'])+' Reviewer '+ ' '.join(D['service']['reviewing']), 'type':'Service'}]
 def layout(title, path, body):
     nav = ''.join(f'<a href="{url}"'+(' aria-current="page"' if url == path else '')+f'>{label}</a>' for label,url in NAV)
     full_title = 'Zhihan Yin' if path == '/' else title+' | Zhihan Yin'
@@ -105,7 +113,7 @@ def layout(title, path, body):
 <main id="main">{body}</main>
 <footer class="footer"><span>© 2026 Zhihan Yin. Hosted by <a href="https://pages.github.com/">GitHub Pages</a>.</span><span><a href="mailto:{D['email']}">Email</a> &nbsp; / &nbsp; <a href="https://github.com/{D['username']}">GitHub</a></span></footer>
 <dialog class="search-dialog" id="search-dialog" aria-label="Search website"><div class="search-header">{icon('search')}<input type="search" id="site-search" placeholder="Search research, projects, and CV…" aria-label="Search research, projects, and CV" autocomplete="off"><button class="close-search" data-close-search aria-label="Close search">ESC</button></div><ul class="search-results" id="search-results"></ul><div class="search-hint">Search by title or topic · Escape to close</div></dialog><script type="application/json" id="search-index">{json.dumps(INDEX).replace('<', chr(92)+'u003c')}</script></body></html>'''
-for title,path,content in [('About','/',home()),('Publications','/publications/',publications()),('Projects','/projects/',projects()),('CV','/cv/',cv())]:
+for title,path,content in [('About','/',home()),('Publications','/publications/',publications()),('Projects','/projects/',projects()),('Service','/service/',service()),('CV','/cv/',cv())]:
     target = ROOT/path.strip('/')/'index.html'
     target.parent.mkdir(parents=True, exist_ok=True)
     target.write_text(layout(title,path,content))
@@ -113,4 +121,4 @@ for title,path,content in [('About','/',home()),('Publications','/publications/'
 (ROOT/'sitemap.xml').write_text('<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'+''.join('<url><loc>'+D['url']+u+'</loc></url>' for _,u in NAV)+'</urlset>')
 (ROOT/'robots.txt').write_text('User-agent: *\nAllow: /\nSitemap: '+D['url']+'/sitemap.xml\n')
 (ROOT/'.nojekyll').touch()
-print('Built homepage, publications, projects, CV, 404, and sitemap.')
+print('Built homepage, publications, projects, service, CV, 404, and sitemap.')
