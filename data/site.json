@@ -199,5 +199,19 @@
       "label": "English",
       "value": "CET-4: 580; CET-6: 570"
     }
-  ]
+  ],
+  "service": {
+    "teaching": [
+      {
+        "term": "Spring 2026",
+        "course": "Introduction to AI",
+        "institution": "Peking University"
+      }
+    ],
+    "reviewing": [
+      "NeurIPS 2026",
+      "EMNLP 2026",
+      "ICLR 2027"
+    ]
+  }
 }
