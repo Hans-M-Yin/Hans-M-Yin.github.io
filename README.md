@@ -38,8 +38,8 @@ server runtime is required to publish the generated files.
 - Layout inspired by https://jiaxuanzou0714.github.io/ (an al-folio-style academic website). This implementation uses original HTML, CSS, and JavaScript.
 - FREAK: ICLR 2026, confirmed by the supplied acceptance notice and the official repository. Paper: https://arxiv.org/abs/2603.19765.
 - Veto: ACM Multimedia 2026, confirmed by the supplied notice and the conference technical programme. Author spelling follows the programme.
-- MIRA: NeurIPS 2026 Poster, confirmed by the author in October 2026.
-- SearchWeave: ongoing work, with a short public description and “Work in progress” status. No result numbers, conference acceptance, training details, or unverified author list are added.
+- MIRA: NeurIPS 2026 Poster. Paper: https://arxiv.org/abs/2611.03087. Code: https://github.com/Hans-M-Yin/mira-neurips26.
+- ModalSearcher (formerly SearchWeave): arXiv preprint, with title, authors, and method summary updated from https://arxiv.org/html/2611.06131v1. Code: https://github.com/Hans-M-Yin/ModalSearcher. The existing `searchweave` anchor and schematic filename are retained for link compatibility.
 - Draft PDFs and acceptance emails are not included in this repository. All four research thumbnails are original illustrative SVG schematics, not experimental figures. Legacy PNG paths contain the same schematics for compatibility.
 - The public CV omits the phone number and fixes the original PDF's incorrect email hyperlink. It is generated from professional information in the supplied CV.
 - `Lora` and `Poppins` are loaded from Google Fonts, with system font fallbacks.

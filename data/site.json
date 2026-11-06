@@ -53,7 +53,16 @@
       "alt": "MIRA schematic: deceptive context, visual reflection, and robust reasoning through reinforcement learning.",
       "summary": "Reinforcement learning with deceptive visual contexts and group-wise reflection triggers, encouraging multimodal models to revisit perceptual mistakes and recover during reasoning.",
       "details": "MIRA first generates and filters misleading visual descriptions, then injects them into training contexts. Reflection triggers within rollout groups encourage visual self-correction while mixing in original data to preserve generalization.",
-      "links": [],
+      "links": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2611.03087"
+        },
+        {
+          "label": "Code",
+          "url": "https://github.com/Hans-M-Yin/mira-neurips26"
+        }
+      ],
       "bib": null
     },
     {
@@ -125,17 +134,36 @@
     },
     {
       "id": "searchweave",
-      "short": "SearchWeave",
-      "title": "SearchWeave: Multimodal Search",
-      "status": "Work in progress",
-      "category": "ongoing",
+      "short": "ModalSearcher",
+      "title": "ModalSearcher: Weaving Visual Evidence into Autonomous Cross-Modal Deep Search",
+      "status": "arXiv preprint · 2026",
+      "category": "manuscript",
       "year": 2026,
-      "authors": [],
+      "authors": [
+        "Zhihan Yin",
+        "Ruyi Li",
+        "Chengyu Fang",
+        "Yifeng Yao",
+        "Nonghai Zhang",
+        "Pengfei Xiong",
+        "Terry Zhang",
+        "Huishuai Zhang",
+        "Dongyan Zhao"
+      ],
       "image": "searchweave.svg",
       "alt": "A winding search path alternates between text and image evidence.",
-      "summary": "Exploring search paths that interleave text and images to connect evidence across modalities.",
-      "details": "Ongoing research on multimodal search and evidence gathering.",
-      "links": [],
+      "summary": "An autonomous cross-modal search agent that gathers and combines text and image evidence across multiple hops, choosing search modalities as its information needs evolve.",
+      "details": "ModalSearch-Pipeline constructs interleaved multimodal knowledge graphs and synthesizes multi-hop questions. ModalSearcher learns to use text search, image search, reverse-image search, and URL reading through supervised fine-tuning and reinforcement learning in a live Web environment. ModalSearch-Bench evaluates autonomous modality selection and cross-modal evidence integration.",
+      "links": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/html/2611.06131v1"
+        },
+        {
+          "label": "Code",
+          "url": "https://github.com/Hans-M-Yin/ModalSearcher"
+        }
+      ],
       "bib": null
     }
   ],
